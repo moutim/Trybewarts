@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:wght@400;700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Header */
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  height: 85px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#trybewarts-header-title {
+  font-family: Cinzel, serif;
+  align-self: center;
+  color: white;
+  font-weight: 900;
+}
+
+header form {
+  display: flex;
+  height: 35px;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.login {
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Main */
+main {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+main form , aside {
+  align-self: center;
+}
+
+aside img {
+  display: block;
+}
+
+aside div {
+  color: white;
+  display: none;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+aside div h2 {
+  font-size: 30px;
+}
+
+aside div li {
+  font-size: 15px;
+  padding: 15px 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+aside div input {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Estilizacao Geral forms */
+.requisitos-form {
+  display: flex;
+}
+
+#secao-nota {
+  display: flex;
+}
+
+#bloco-meio {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+#secao-familia {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+#secao-conteudos {
+  width: 50%;
+}
+
+#secao-conteudos .bloco-checks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#secao-conteudos .bloco-checks div {
+  width: 33%;
+}
+
+main form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  color: rgb(39, 39, 39);
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  height: 87vh;
+  width: 100vw;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.input {
+  width: 60%;
+}
+
+form input , select , option {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 5px 11px 25px 2px rgba(255, 255, 255, 0.2);
+}
+
+button {
+  box-shadow: 5px 11px 25px 2px rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+}
+
+textarea {
+  border: none;
+  border-radius: 10px;
+}
+
+label , h2 {
+  color: white;
+}
+
+label {
+  font-weight: 700;
+}
+
+form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+form button {
+  background-color: tomato;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Classes do JavaScript */
+.cheet {
+  width: 100vw;
+  height: 100vh;
+}
