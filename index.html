@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img alt="personalidades" class="background">
+
     <header class="header">
         <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts" class="trybewarts-header-logo">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -17,12 +19,8 @@
             <button class="login" id="button-login">Entrar</button>
         </form>
     </header>
-
     <main id="main">
-        <audio src="music-theme.mp3" loop autoplay id="music-theme"></audio>
-        <img src="fundo.jpg" alt="fundo de hogworhts" class="background">
-
-        
+        <!-- <audio src="music-theme.mp3" loop autoplay id="music-theme"></audio> -->
             <form action="" id="evaluation-form">
                 <h2>Formulário de Avaliação</h2>
                 <div class="requisitos-form">
@@ -33,7 +31,7 @@
                 <div class="requisitos-form">
                     <input type="email" name="email" id="input-email" placeholder="Email" class="input">
                     <div>
-                    <label for="">Casa: </label>
+                    <label for=""><strong>Casa: </strong></label>
                     <select name="house" id="house">
                         <option value="" selected></option>
                         <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -48,7 +46,7 @@
 
                 <div id="bloco-meio">
                     <div id="secao-familia">
-                        <label for="" id="label-family">Qual sua família?</label>
+                        <label for="" id="label-family"><strong>Qual sua família?</strong></label>
 
                         <div>
                             <input type="radio" name="family" id="Frontend" value="Frontend">
@@ -67,7 +65,7 @@
                     </div>
 
                     <div id="secao-conteudos">
-                        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+                        <label id="label-content" for=""><strong>Qual conteúdo você está com mais vontade de aprender?</strong></label>
 
                         <div class="bloco-checks">
                             <div>
@@ -105,7 +103,7 @@
 
                 <hr>
                 <div id="secao-nota">
-                    <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+                    <label for="" id="label-rate"><strong>Como você avalia a Trybewarts?</strong></label>
                     <div>
                         <input type="radio" name="rate" value="1" id="1">
                         <label for="1">1</label>
@@ -154,7 +152,6 @@
                 </div>
 
                 <div id="secao-agreement">
-                    <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
                     <div>
                         <input type="checkbox" name="agreement" id="agreement" value="concorda">
                         <label for="agreement">Você concorda com o uso das informações acima?</label>
@@ -169,13 +166,13 @@
                 <div>
                     <h2>Lista de palavras mágicas!</h2>
                     <ul>
-                        <li>Digite 'pause' para pausar a musica</li>
-                        <li>Digite 'tocar' para continuar tocando a musica</li>
-                        <li>Insira a cor abaixo e digite 'mudar' para trocar a cor da fonte</li>
+                        <li>Digite <strong> 'pause'</strong> para pausar a musica</li>
+                        <li>Digite <strong> 'tocar'</strong> para continuar tocando a musica</li>
+                        <li>Insira a cor abaixo e digite <strong>'mudar'</strong> para trocar a cor da fonte</li>
                         <input type="text" id="magic-color" placeholder="Digite em ingles">
-                        <li>Digite 'xulambs' e veja algo m a r a v i l h o s o</li>
-                        <li>Digite 'humor' e veja um grande humorista</li>
-                        <li>Digite 'cantora' e veja uma popstar internacional</li>
+                        <li>Digite <strong> 'xulambs'</strong> e veja algo m a r a v i l h o s o</li>
+                        <li>Digite <strong> 'humor'</strong> e veja um grande humorista</li>
+                        <li>Digite <strong> 'cantora'</strong> e veja uma popstar internacional</li>
                     </ul>
                 </div>
             </aside>

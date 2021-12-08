@@ -41,12 +41,42 @@ function contaCaractere() {
 }
 campo.addEventListener('input', contaCaractere);
 
+// Retorna os campos preenchidos
+const firstName = document.getElementById('input-name');
+const lastName = document.getElementById('input-lastname');
+const emailInput = document.getElementById('input-email');
+const house = document.getElementById('house');
+const textarea = document.querySelector('#textarea');
+
+function retornaTudo(event) {
+  event.preventDefault();
+  const avaliation = document.querySelector('input[name="rate"]:checked');
+  const family = document.querySelector('input[name="family"]:checked');
+  const materia = document.getElementsByName('materia');
+  let materiaChecked = '';
+  for (let index = 0; index < materia.length; index += 1) {
+    if (materia[index].checked) {
+      materiaChecked += `${materia[index].value}, `;
+    }
+  }
+  const form = document.getElementById('evaluation-form');
+  form.innerHTML = `<p><strong>Nome:</strong> ${firstName.value} ${lastName.value}</p>
+    <p><strong>Email:</strong> ${emailInput.value}</p>
+    <p><strong>Casa:</strong> ${house.value}</p>
+    <p><strong>Família:</strong> ${family.value}</p>
+    <p><strong>Matérias:</strong> ${materiaChecked}</p>
+    <p><strong>Avaliação:</strong> ${avaliation.value}</p>
+    <p><strong>Observações:</strong> ${textarea.value}</p>`;
+}
+
+btnEnviar.addEventListener('click', retornaTudo);
+
 // Funcao de Easter Eggs
 const asideImg = document.querySelector('aside img');
 const listaMagias = document.querySelector('aside div');
 
 // Aparecer lista de funcoes
-cheet('a b a c a d a b r a', function () {
+cheet('e u r e c a', function () {
   asideImg.style.display = 'none';
   listaMagias.style.display = 'block';
 });
@@ -63,7 +93,7 @@ cheet('t o c a r', function () {
 });
 
 // Mudar cor da fonte
-const elementos = document.querySelectorAll('h2, label');
+const elementos = document.querySelectorAll('h2, label, li');
 cheet('m u d a r', function () {
   const cor = document.getElementById('magic-color').value;
   for (let i = 0; i < elementos.length; i += 1) {
@@ -72,25 +102,23 @@ cheet('m u d a r', function () {
 });
 
 // Mostra cantora
+const personalidades = document.querySelector('.background');
 cheet('c a n t o r a', function () {
-  const body = document.querySelector('body');
-  const conteudo = body.innerHTML;
-  body.innerHTML = '<img src="cantora.png" class="cheet">';
-  setTimeout(() => body.innerHTML = conteudo, 500);
+  personalidades.setAttribute('src', 'cantora.png');
+  personalidades.style.display = 'block';
+  setTimeout(() => personalidades.style = 'none', 1000);
 });
 
 // Mostra humorista
 cheet('h u m o r', function () {
-  const body = document.querySelector('body');
-  const conteudo = body.innerHTML;
-  body.innerHTML = '<img src="humorista.png" class="cheet">';
-  setTimeout(() => body.innerHTML = conteudo, 500);
+  personalidades.setAttribute('src', 'humorista.png');
+  personalidades.style.display = 'block';
+  setTimeout(() => personalidades.style = 'none', 1000);
 });
 
 // Mostra lenhador
 cheet('x u l a m b s', function () {
-  const body = document.querySelector('body');
-  const conteudo = body.innerHTML;
-  body.innerHTML = '<img src="hugo.png" class="cheet">';
-  setTimeout(() => body.innerHTML = conteudo, 500);
+  personalidades.setAttribute('src', 'hugo.png');
+  personalidades.style.display = 'block';
+  setTimeout(() => personalidades.style = 'none', 1000);
 });
