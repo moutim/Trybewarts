@@ -46,7 +46,7 @@ const asideImg = document.querySelector('aside img');
 const listaMagias = document.querySelector('aside div');
 
 // Aparecer lista de funcoes
-cheet('a b a', function () {
+cheet('a b a c a d a b r a', function () {
   asideImg.style.display = 'none';
   listaMagias.style.display = 'block';
 });
